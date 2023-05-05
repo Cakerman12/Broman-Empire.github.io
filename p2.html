@@ -11,17 +11,17 @@ td {
 <body>
   
   <table style="width:300% hight:300%">
-    <tr><td style="width:300% hight:300%">Text goes here</td></tr>
+    <tr><td style="width:300% hight:300%"><p id='out'>Text goes here</p></td></tr>
     <tr>
       <th>
         <form>
-          <input type="text" id="fname" name="fname">
+          <input type="text" id="name" name="fname">
           <input type="button" id="myBtn" onclick="myFunction()" value="ask">
         </form>
       </th>
     </tr>
   </table>
 <script>
-document.getElementById("fname").innerHTML = 'I play pokemon go';
+document.getElementById("out").innerHTML = 'I play pokemon go';
 </script>
 </body>
