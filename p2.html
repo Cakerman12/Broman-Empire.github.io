@@ -24,6 +24,12 @@ td {
 <script>
 function textreset(){
 document.getElementById("out").innerHTML = document.getElementById("name").value;
+document.getElementById("name").addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    textreset(event);
+  }
+});
 }
 </script>
 </body>
