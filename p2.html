@@ -16,12 +16,14 @@ td {
       <th>
         <form>
           <input type="text" id="name" name="fname">
-          <input type="button" id="myBtn" onclick="myFunction()" value="ask">
+          <input type="button" onclick="textreset()" id="myBtn" onclick="myFunction()" value="ask">
         </form>
       </th>
     </tr>
   </table>
 <script>
-document.getElementById("out").innerHTML = 'I play pokemon go';
+textreset(){
+document.getElementById("out").innerHTML = document.getElementById("name").innerHTML;
+}
 </script>
 </body>
