@@ -8,25 +8,26 @@ const info =[
 ];
 
 function textreset(){
+	
   const z = document.getElementById("name").value;
-var p=-1;
-var rec =0;
-var rec2 =0;
-	for(var ky in keys){
- 	 var i=0;
-	  const op = ky.split();
- 	 for(var ol in op){
- 	    if(ol.toLowerCase() in z.toLowerCase()){
- 	       i++;
-		     }
- 		 }
-			  if(p<i){
- 		   p=i;
-				    rec2=rec;
- 				 }
-  		rec++;
-			}
+  var p=-1;
+  var rec =0;
+  var rec2 =0;
+  for(var ky in keys){
+     var i=0;
+     const op = ky.split();
+     for(var ol in op){
+ 	if(ol.toLowerCase() in z.toLowerCase()){
+ 	  i++;
+        }
+     }
+     if(p<i){
+ 	p=i;
+	rec2=rec;
+     }
+     rec++;
+  }
  
-					document.getElementById("out").innerHTML = info[rec2];
- 
+  document.getElementById("out").innerHTML = info[rec2];
+
 }
