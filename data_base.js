@@ -8,7 +8,7 @@ const info =[
 ];
 
 function textreset(){
-  document.getElementById("but").value = "ask";	
+  document.getElementById("but").value = "use";	
   const z = document.getElementById("name").value;
   var p=-1;
   var rec =0;
