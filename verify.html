@@ -11,7 +11,7 @@
 <script>
 function log_(){
 var fs = require('fs');
-fs.appendFile('contact_log.txt', document.getELementById('email_'));
+fs.appendFile('contact_log.txt', document.getELementById('email_').value);
 }
 </script>  
 </body>
