@@ -3,12 +3,15 @@
 <body>
 <form>
 <table>
-<tr><td>  <input value="enter email">  </td><td>  <input type="button" value="enter">  </td></tr>
+<tr><td>  <input id="email_" value="enter email">  </td><td>  <input type="button" value="enter" onclick="log_">  </td></tr>
 <tr><td>  <input value="verify code">  </td><td>  <input type="button" value="enter">  </td></tr>
 </table>
 <form>
   
 <script>
-
+function log_(){
+var fs = require('fs');
+fs.appendFile('contact_log.txt', document.getELementById('email_'));
+}
 </script>  
 </body>
